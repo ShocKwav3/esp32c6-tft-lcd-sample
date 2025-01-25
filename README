@@ -1,0 +1,47 @@
+# ESP32C6 LCD Sample
+
+This project demonstrates how to use an ESP32C6 microcontroller to interface with a LCD display. The project is developed using PlatformIO and Arduino.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Hardware Requirements](#hardware-requirements)
+- [Software Requirements](#software-requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+
+## Introduction
+This project aims to provide a simple and effective way to control a LCD display using an ESP32C6 microcontroller. It includes sample code and instructions to get started quickly. I used a Waveshare ESP32C6 board with integreated 1.47inch display.
+
+## Features
+- Interface with LCD display
+- Display text and graphics
+- Easy-to-use API
+
+## Hardware Requirements
+- ESP32C6 microcontroller
+- LCD display
+
+## Software Requirements
+- PlatformIO IDE
+- Arduino core 3.0.x for ESP32C6
+    - Arduino is officially not available through platformio. I used a community branch which allows developent for such case. Check `platform` in `platformio.ini`.
+- `tft_eSPI` library
+    - Due to the lack of support of ESP32C6, at this time, I used [Cincinnatu](https://github.com/Cincinnatu)'s branch which has a [PR](https://github.com/Bodmer/TFT_eSPI/pull/3399) to the library, based on [this issue](https://github.com/Bodmer/TFT_eSPI/issues/3255), but not yet merged.
+    - It can be found in the `lib` directory.
+
+## Installation
+1. Clone the repository
+2. Open the project in PlatformIO IDE
+3. Install the required libraries
+4. Compile
+
+## Usage
+1. **Connect the hardware:**
+    - Connect the ESP32C6 to the LCD display via SPI according to pinout diagram.
+2. **Update config:**
+    - Open `config/tft_config.h` and make changes according to connection made previous step.
+2. **Upload the code:**
+    - Upload the code to the ESP32C6 using PlatformIO.
+3. **Run the project:**
+    - Power on the board and the LCD and test should show up on the display.
