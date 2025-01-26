@@ -28,7 +28,8 @@ This project aims to provide a simple and effective way to control a LCD display
     - Arduino is officially not available through platformio. I used a community branch which allows developent for such case. Check `platform` in `platformio.ini`.
 - `tft_eSPI` library
     - Due to the lack of support of ESP32C6, at this time, I used [Cincinnatu](https://github.com/Cincinnatu)'s branch which has a [PR](https://github.com/Bodmer/TFT_eSPI/pull/3399) to the library, based on [this issue](https://github.com/Bodmer/TFT_eSPI/issues/3255), but not yet merged.
-    - It can be found in the `lib` directory.
+    - Using it with the same name but pointed to the branch by specifying the url in `platformio.ini`, to avoid pushing a whole library to VC.
+        - Things can change and break something. Best to keep a local copy and it can be placed in `lib`.
 
 ## Installation
 1. Clone the repository
