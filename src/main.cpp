@@ -8,8 +8,9 @@ void setup()
     display.setCursorPosition(15, 0);
     display.setFontSize(4);
     display.setTextColor(ST7789DisplayDriver::COLOR_WHITE);
-    display.printLine("LALALALALA");
-    display.printLine("ULALAAAAAA!!!");
+    display.printLine("Hello");
+    display.printLine("World");
+    display.printLine("SUP?");
 }
 
 void loop()
