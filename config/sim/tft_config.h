@@ -4,9 +4,6 @@
 
 #define ILI9341_DRIVER  // Full configuration option, define additional parameters below for this display
 
-#define TFT_WIDTH 172  // ST7789 172 x 320
-#define TFT_HEIGHT 320 // ST7789 240 x 320
-
 #define TFT_MOSI 6
 #define TFT_MISO 5
 #define TFT_SCLK 7

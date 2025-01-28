@@ -7,7 +7,7 @@ void setup()
     display.init();
     display.setCursorPosition(15, 0);
     display.setFontSize(4);
-    display.setTextColor(ST7789DisplayDriver::COLOR_WHITE);
+    display.setTextColor(ST7789DisplayDriver::Color::WHITE);
     display.printLine("Hello");
     display.printLine("World");
     display.printLine("SUP?");
