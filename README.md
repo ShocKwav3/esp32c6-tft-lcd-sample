@@ -35,6 +35,12 @@ This project aims to provide a simple and effective way to control a LCD display
 2. Open the project in PlatformIO IDE
 3. Install the required libraries
 
+### Optional steps
+- Use Aider
+    - Rename `.aider.conf.yml.sample` to `.aider.conf.yml`
+    - Add gemini (or other model) api key
+- Install Wokwoi vscode extension to use Wokwi simulator
+
 ## Usage
 1. **Connect the hardware:**
     - Connect the ESP32C6 to the LCD display via SPI according to pinout diagram.

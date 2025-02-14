@@ -1,0 +1,3 @@
+model: gemini/gemini-1.5-pro-latest
+api-key:
+- gemini=gemini_api_key      # API key for Gemini
