@@ -47,7 +47,7 @@ This project aims to provide a simple and effective way to control a LCD display
         - For testing with simulator it's not necessary
 2. **Update config:**
     - Open `config/device/tft_config.h` and make changes according to connection made previous step.
-        - `config/device/tft_config.h` in the case of simulator
+        - `config/sim/tft_config.h` in the case of simulator
 3. **Compile:**
     - Select env.
         - Select between `device` and `sim` env from the switcher in vscode status bar
